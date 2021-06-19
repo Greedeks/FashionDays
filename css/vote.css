@@ -1,0 +1,215 @@
+body {
+    background: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr;
+    src: url(../other/HelveticaNeueCyr-Thin.ttf); 
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content{
+    overflow-y: scroll;
+    width: 580px;
+    height: 700px;
+    margin-left: 300px;
+    background: #f5f6f8;
+    border: 2px solid #e0406e;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+/*Header*/
+.head-sitename{
+    font-family: Monotype Corsiva;
+    font-size: 24pt;
+    font-weight: normal;
+    color:#f5929a;
+    margin: 0;
+    margin-top: 20px;
+    width: 350px;
+    cursor: default;
+}
+
+.head-sitenameT{
+    font-family: Monotype Corsiva;
+    font-size: 24pt;
+    font-weight: bolder;
+    color: #99c3d2;
+    margin: 0;
+    width: 350px;
+    animation: animate 1s;
+    cursor: default;
+}
+@keyframes animate{
+    from{
+    font-size: 30pt;
+    }
+    to{
+    font-size: 24pt;
+    }
+}
+
+.head-site-text{
+    font-family: HelveticaNeueCyr;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #9b9fa0;
+    margin: 0;
+    margin-left: 400px;
+    margin-top: -70px;
+    min-width: 800px;
+}
+
+/*Question*/
+.question{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px; 
+    margin-left: 35px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.question-head{
+    color:#9b6a80;
+    font-family: HelveticaNeueCyr;
+    font-size: 15pt;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: bolder;
+    cursor: default;
+}
+
+.answer{
+    padding: 10px;
+    font-family: Tahoma;
+    font-size: 12pt;
+    color: #77b0c4;
+    transition: .1s;
+    cursor: default;
+}
+
+.answer:hover{
+    color: #e0406e;
+}
+
+.rbtn{
+    transition: .1s;
+}
+.rbtn:hover{
+    transform: scale(1.4);
+}
+
+textarea{
+    width: 455px;
+    height: 200px;
+    margin: 20px 20px;
+    border: none;
+    outline: 1px solid #77b0c4;
+    color: #e0406e;
+    font-family: HelveticaNeueCyr;
+    font-size: 12pt;
+    font-weight: bolder;
+    resize: none;
+}
+button{
+    color:white;
+    background: #e0406e;
+    border: 1px solid #e03b63;
+    outline: none;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    font-family: HelveticaNeueCyr;
+    font-size: 12pt;
+    font-weight: bolder;
+    margin-left: 230px;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .1s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+button:hover{
+    transform: scale(1.3);
+}
+
+input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 1px solid #e0406e;
+        cursor: pointer;
+    }
+
+input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #e0406e;;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 1px solid #e0406e;
+        cursor: pointer;
+    }
+
+/*Progressbar*/
+.progressbar{
+    background: #e0406e;
+    position: relative;
+    position: absolute;
+    z-index: 100;
+    width: 568px;
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 300px;
+    border-radius: 0px 0px 0px 8px; 
+    
+}
+label{
+    font-family: HelveticaNeueCyr;
+    font-size: 11pt;
+    font-weight: bolder; 
+    color:white;
+    margin-top: 15px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.progressbar-line{
+    background: transparent;
+    border-radius: 10px;
+    height: 10px;
+    width: 220px;
+    border: 2px solid white;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 240px;
+}
+.progressbar-line2{
+    background: white;
+    border-radius: 10px;
+    height: 10px;
+    width: 0px;
+    margin-left: -1px;
+    margin-top: -2px;
+}
